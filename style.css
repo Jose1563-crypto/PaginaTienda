@@ -1,0 +1,25 @@
+/* Ajusta la altura del carrusel */
+
+.image-zoom-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden; /* Oculta el desbordamiento de la lupa */
+}
+
+.image-zoom-container img {
+    width: 100%;  /* Asegúrate de que la imagen se ajuste al contenedor */
+    height: auto;
+    transition: transform 0.3s ease; /* Agrega una transición suave */
+}
+
+.zoom-lens {
+    position: absolute;
+    border: 1px solid #000;
+    width: 150px; /* Ajusta el tamaño de la lupa */
+    height: 150px;
+    border-radius: 50%; /* Hace la lupa redonda */
+    display: none; /* Esconde la lupa por defecto */
+    pointer-events: none; /* Evita que la lupa interfiera con eventos del mouse */
+}
+
+      
